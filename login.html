@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Leo的生存日记</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/checker.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body onload="getrdn()">
+		<div class="containner">
+			<div class="context">
+				<form action="index.html" name="myform" method="post">
+					用户名:<input type="text" class="inputer" id="username" placeholder="请输入您的用户名" /><br />
+					密&nbsp&nbsp&nbsp码:<input type="password" class="inputer" id="psw" placeholder="请输入您的密码" /><br />
+					验证码:<input type="text" class="inputer" id="in_num" />
+					<input type="text" class="inputer" id="check_num" readonly="readonly" onclick="getrdn()"/><br />
+					<a href="#">
+						<div class="btn" id="sub" onclick="check()">
+						<span>登录</span>
+						</div>
+					</a>&nbsp&nbsp&nbsp
+					<a href="#">
+						<div class="btn" id="reset" onclick="Reset()">
+						<span>重置</span>
+						</div>
+					</a>
+					<!--<input type="submit" id="sub" onclick=""/>&nbsp;&nbsp;<input type="reset" value="重置" />-->
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
